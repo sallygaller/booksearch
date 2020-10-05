@@ -39,7 +39,8 @@ class App extends Component {
         console.log(this.state.search);
         const printTypeSelect = this.state.printType;
         const bookTypeSelect = this.state.bookType;
-        const url = `https://www.googleapis.com/books/v1/volumes?q=${this.state.search}&printType=${printTypeSelect}&bookType=${bookTypeSelect}&key=AIzaSyAG36raBWSged3Dn8Z-UwYnmhNeFJziUOg`;
+        const apiKey = "example"
+        const url = `https://www.googleapis.com/books/v1/volumes?q=${this.state.search}&printType=${printTypeSelect}&bookType=${bookTypeSelect}&key=${apiKey}`;
         const options = {
           method: 'GET',
         }
